@@ -1,2 +1,2 @@
 # CYKO11.github.io
-Personal Website
+Personal Website displaying skills, experience and projects
