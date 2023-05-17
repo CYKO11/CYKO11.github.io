@@ -1,0 +1,15 @@
+.App {
+  background-color: rgb(17,17,17);
+}
+
+.ContentDisplay {
+  background-color: rgb(41,41,41);
+}
+
+.Header, .Footer {
+  background-color:rgb(46, 46, 46);
+}
+
+.Header-Text {
+ color: rgb(52, 82, 102)
+}
