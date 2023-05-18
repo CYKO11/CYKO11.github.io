@@ -7,6 +7,7 @@ export default {
         primary:'rgb(17,17,17)',
         secondary:'rgb(41,41,41)',
         headers:'rgb(69,79,255)',
+        text:'rgb(255,255,255)',
       }
     },
   },
