@@ -4,9 +4,9 @@ export default {
   theme: {
     extend: {
       colors:{
-        primary:'rgb(17,17,17)',
+        primary:'rgb(43,42,51)',
         secondary:'rgb(41,41,41)',
-        headers:'rgb(69,79,255)',
+        headers:'rgb(28,27,34)',
         text:'rgb(255,255,255)',
       }
     },
