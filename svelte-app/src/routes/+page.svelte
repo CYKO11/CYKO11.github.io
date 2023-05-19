@@ -1,17 +1,32 @@
+<script lang="ts">
+    import Navbar from "../components/navbar.svelte";
+    import Experience from "../views/experience.svelte";
+    import HomeAutomation from "../views/homeAutomation.svelte";
+    import Notes from "../views/notes.svelte";
+    import Triggers from "../views/triggers.svelte";
+
+    let page = "Experience"
+
+    function navbarHandler(e: any){
+        console.log(e)
+        page = e.detail.page
+    }
+</script>
+
 <div class="bg-primary w-screen h-screen fixed">
 
-    <div class="flex flex-row m-5 h-10 bg-headers rounded-full flex-grow">
-        <img class="rounded-full h-10 w-28 object-cover hover:object-none" src="cook.gif" alt="why"/>
-        <button class="bg-headers ml-20 w-20 h-10 text-white rounded-full"> Experience </button>
-        <button class="bg-headers ml-20 w-22 h-10 text-white rounded-full"> Home Automation </button>
-        <button class="bg-headers ml-20 w-20 h-10 text-white rounded-full"> Notes </button>
-        <button class="bg-headers ml-20 w-20 h-10 text-white rounded-full"> Triggers </button>
-    </div>
+    <Navbar on:event={navbarHandler}/>
 
-    <div class="flex-col m-5 w-10 bg-headers rounded-full flex-1 flex">
-
-    </div>
-    <!-- <div class="bg-headers fixed mt-20 ml-20 mr-20 rounded-e-xl">
-        
-    </div> -->
+    {#if page == "Experience"}
+        <Experience/>
+    {/if}
+    {#if page == "HomeAutomation"}
+        <HomeAutomation/>
+    {/if}
+    {#if page == "Notes"}
+        <Notes/>
+    {/if}
+    {#if page == "Triggers"}
+        <Triggers/>
+    {/if}
 </div>
